@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+em {
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  float: left;
+  width: auto;
+  background: transparent;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0.2em;
+  margin-left: 1.5vw;
+  color: var(#fff);
+  font-family: Oswald, arial;
+}
+.sgrlogo {
+  color: transparent;
+}
+
+.box,
+div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.space,
+.boxballsstrikesseparator {
+  font-size: 6em;
+  width: 106px;
+  height: 155px;
+  background-image: url(https://i.imgur.com/ChEcr9j.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+/*---- GENERIC inline -----*/
+.containergeneric {
+  grid-template: auto;
+  float: left;
+  width: auto;
+  font-size: 3vw;
+}
+.containergeneric .box {
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5em;
+}
+
+.containergeneric .box {
+  grid-row: 1/2;
+}
+.containergeneric .sgrlogo {
+  grid-column: 1 / 2;
+}
+.containergeneric .boxhometeam {
+  background-image: url(https://i.imgur.com/KYPt1eG.png);
+  background-size: cover;
+  grid-column: 2 / 3;
+}
+.containergeneric .boxhomepoints {
+  background-image: url(https://i.imgur.com/TX18jUw.png);
+  background-size: cover;
+  grid-column: 3 / 4;
+}
+.containergeneric .space {
+  grid-column: 4 / 6;
+}
+.containergeneric .boxawaypoints {
+  background-image: url(https://i.imgur.com/0x8sABi.png);
+  background-size: cover;
+  grid-column: 6 / 6;
+}
+.containergeneric .boxawayteam {
+  background-image: url(https://i.imgur.com/Nm7HSy3.png);
+  background-size: cover;
+  grid-column: 7 / 8;
+}
+.containergeneric .boxpoints {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2em;
+}
